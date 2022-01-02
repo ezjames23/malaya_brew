@@ -43,15 +43,15 @@ http://www.templatemo.com/tm-466-cafe-house
         <div class="row">
           <div class="tm-top-header-inner">
             <div class="tm-logo-container">
-              <img src="{% static 'malayas/img/malaya14.png' %}" alt="Logo" class="tm-site-logo">
-              <!-- <h1 class="tm-site-name tm-handwriting-font">Malaya Brew</h1> -->
+              <img src="{% static 'malayas/img/malaya1.jpg' %}" alt="Logo" class="tm-site-logo" width=64 height=41>
+              <h1 class="tm-site-name tm-handwriting-font">Malaya Brew</h1>
             </div>
             <div class="mobile-menu-icon">
               <i class="fa fa-bars"></i>
             </div>
             <nav class="tm-nav">
               <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="{% url 'home' %}" class="active">Home</a></li>
                 <li><a href="today-special.html">Today Special</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -72,7 +72,7 @@ http://www.templatemo.com/tm-466-cafe-house
           <h2 class="white-text tm-handwriting-font tm-welcome-header"><img src="{% static 'malayas/img/header-line.png' %}" alt="Line" class="tm-header-line">&nbsp;Welcome To&nbsp;&nbsp;<img src="{% static 'malayas/' %}img/header-line.png" alt="Line" class="tm-header-line"></h2>
           <h2 class="gold-text tm-welcome-header-2">Malaya Brew</h2>
           <p class="gray-text tm-welcome-description">Rich. Clean. Fruity. Fragrant. <span class="gold-text">Malaya Brew</span> takes pride in using organically grown and locally sourced coconut sugar, cocoa tablea and coffee beans. <span class="gold-text">Maitum's</span> Upo and Ticulab native coffee beans are freshly roasted and amongst of Mindanao's finest.</p>
-          <a href="#main" class="tm-more-button tm-more-button-welcome">Details</a>      
+                
         </div>
         <img src="{% static 'malayas/img/table-set.png' %}" alt="Table Set" class="tm-table-set img-responsive">             
       </div>      
@@ -84,7 +84,7 @@ http://www.templatemo.com/tm-466-cafe-house
             <h2 class="tm-section-header gold-text tm-handwriting-font">The Best Coffee for you</h2>
             <h2>Cafe House</h2>
             <p class="tm-welcome-description">Malaya Brew Cafe is your place of acceptance. A place where you can meditate with coffee. A place where you let yourself simply be who you are. Once you enter the doors, you forget your worries. You start to live IN the moment. You smell the enticing aroma of coffee. Hot smoke pressing on your face. You see more clearly the smile of the people that means something to you. You feel the nostalgia on your skin. You sense the belongingness of the moment. And that is what your getting: belonging.</p>
-            <a href="#" class="tm-more-button margin-top-30">Read More</a> 
+            <a href="https://www.facebook.com/malayabrew">Visit us</a> 
           </div>
           <div class="col-lg-3 col-md-3 col-sm-4 tm-welcome-img-container">
             <div class="inline-block shadow-img">
@@ -104,7 +104,7 @@ http://www.templatemo.com/tm-466-cafe-house
                 <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">B</span>lack</h3><hr class="tm-popular-item-hr">
                 <p>Basta ang masarap na kape ay simpleh lng. Simpleng tulad mo.</p>
                 <div class="order-now-container">
-                  <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
+                  <a href="https://www.facebook.com/malayabrew" class="order-now-link tm-handwriting-font">Order Now</a>
                 </div>
               </div>              
             </div>
@@ -114,7 +114,7 @@ http://www.templatemo.com/tm-466-cafe-house
                 <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">a</span>rabica</h3><hr class="tm-popular-item-hr">
                 <p>Kape na punong puno ng damdamin na hindi maamin amin :)</p>
                 <div class="order-now-container">
-                  <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
+                  <a href="https://www.facebook.com/malayabrew" class="order-now-link tm-handwriting-font">Order Now</a>
                 </div>
               </div>              
             </div>
@@ -124,7 +124,7 @@ http://www.templatemo.com/tm-466-cafe-house
                 <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">m</span>ocha</h3><hr class="tm-popular-item-hr">
                 <p>Oh,try mo mag Kape!Nang magising ka sa katotohanang di kayo pwede!</p>
                 <div class="order-now-container">
-                  <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
+                  <a href="https://www.facebook.com/malayabrew" class="order-now-link tm-handwriting-font">Order Now</a>
                 </div>
               </div>              
             </div>
@@ -140,7 +140,7 @@ http://www.templatemo.com/tm-466-cafe-house
               <div class="tm-special-item">
                 <div class="tm-special-img-container">
                   <img src="{% static 'malayas/img/pastil.jpg' %}" alt="Special" class="tm-special-img img-responsive" width="520" height="400">  
-                  <a href="#">
+                  <a href="{% url 'today' %}">
                     <div class="tm-special-description">
                       <h3 class="tm-special-title">Pastil</h3>
                       <p>Rice with chicken that's wrapped in banana leaf.</p>  
@@ -154,7 +154,7 @@ http://www.templatemo.com/tm-466-cafe-house
                 <div class="tm-special-item">
                   <div class="tm-special-img-container">
                     <img src="{% static 'malayas/img/tuna.jpg' %}" alt="Special" class="img-responsive" width="360" height="207">  
-                    <a href="#">
+                    <a href="{% url 'today' %}">
                       <div class="tm-special-description">
                         <h3 class="tm-special-title">Lumpia</h3>
                         <p>Lumpia with tuna.</p>
@@ -189,7 +189,7 @@ http://www.templatemo.com/tm-466-cafe-house
                   <li>Cold Brew Mocha</li> 
                   <li>Cold Brew Arabica</li> 
                 </ol>
-                <a href="#" class="tm-more-button margin-top-30">Read More</a>    
+                <a href="{% url 'today' %}" class="tm-more-button margin-top-30">Read More</a>    
               </div>
             </div>
           </div>          
@@ -209,9 +209,9 @@ http://www.templatemo.com/tm-466-cafe-house
               <h3 class="tm-footer-div-title">Get Social</h3>
               <p>Connect to us discover adventure with Malaya Brew!</p>
               <div class="tm-social-icons-container">
-                <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
+                <a href="https://www.facebook.com/malayabrew" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/malayabrew" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UChhTKvrN21DPicvpeBaqH1g" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
               </div>
             </div>
           </div>          
